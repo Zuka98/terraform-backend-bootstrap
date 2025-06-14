@@ -1,0 +1,9 @@
+# Example configuration file
+# Copy this file to terraform.tfvars and customize the values for your environment
+
+# AWS region where resources will be deployed
+aws_region = "us-east-1"
+
+# Project information
+project_name = "my-project-scenario-1"
+environment  = "dev" 
