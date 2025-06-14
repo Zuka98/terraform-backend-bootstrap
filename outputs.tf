@@ -27,7 +27,6 @@ output "backend_configuration" {
   description = "Backend configuration block for other Terraform projects"
   value = {
     bucket         = aws_s3_bucket.terraform_state.bucket
-    key            = "<project>/<environment>/terraform.tfstate"
     region         = var.aws_region
     dynamodb_table = aws_dynamodb_table.terraform_locks.name
     encrypt        = true
