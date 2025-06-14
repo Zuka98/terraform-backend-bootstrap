@@ -1,0 +1,14 @@
+# Example configuration file for Scenario 2: Centralized Management
+# Copy this file to terraform.tfvars and customize the values for your environment
+
+# AWS region where resources will be deployed
+aws_region = "us-east-1"
+
+# Project information
+project_name = "my-project-scenario-2"
+environment  = "dev"
+
+# Target account configuration
+target_account_id = "123456789012"  # Replace with your target AWS account ID
+deployment_role_arn = "arn:aws:iam::123456789012:role/TerraformDeploymentRole"  # Replace with your actual deployment role ARN
+external_id       = "your-unique-external-id"  # Replace with your unique external ID that matches your cross-account role
