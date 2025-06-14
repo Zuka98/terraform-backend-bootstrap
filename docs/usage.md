@@ -1,27 +1,5 @@
 # Usage Guide
 
-This repository provides a centralized Terraform state backend infrastructure using AWS S3 and DynamoDB. It enables multiple Terraform projects to securely store and manage their state files with proper locking mechanisms, supporting various deployment patterns across single or multi-account AWS environments.
-
-## Table of Contents
-
-- [Main Scenarios](#main-scenarios)
-- [Scenario 1: Single Account Setup](#scenario-1-single-account-setup)
-  - [Overview](#overview)
-  - [When to Use](#when-to-use)
-  - [Limitations](#limitations)
-  - [Recommendation](#recommendation)
-  - [Example Implementation](#example-implementation)
-  - [Setup Instructions](#setup-instructions)
-- [Scenario 2: Centralized Management (Recommended)](#scenario-2-centralized-management-recommended)
-  - [Overview](#overview-1)
-  - [When to Use](#when-to-use-1)
-  - [Advantages](#advantages)
-  - [Example Implementation](#example-implementation-1)
-  - [Setup Instructions](#setup-instructions-1)
-- [State Key Organization](#state-key-organization)
-- [Migrating from Remote to Local State](#migrating-from-remote-to-local-state)
-- [Cleanup and Project Removal](#cleanup-and-project-removal)
-
 ## Main Scenarios
 
 This backend setup supports two primary usage scenarios, each suited for different organizational needs and deployment patterns:

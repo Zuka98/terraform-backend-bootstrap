@@ -1,9 +1,5 @@
 # Documentation
 
-This repository provides a production-ready Terraform backend using S3 for state storage and DynamoDB for state locking. The documentation covers deployment, configuration, and ongoing management.
-
-The backend solution enables centralized state management for Terraform projects across your organization. It handles the bootstrapping problem by initially using local state to create the remote backend infrastructure, then optionally migrating to use its own backend.
-
 ## Table of Contents
 
 - [Prerequisites](prerequisites.md)
