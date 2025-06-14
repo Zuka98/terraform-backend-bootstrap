@@ -1,18 +1,6 @@
 # Prerequisites
 
-Everything you need before deploying the Terraform Backend Bootstrap Repository.
-
-## Table of Contents
-
-- [Required Software](#required-software)
-  - [Terraform](#terraform)
-  - [AWS CLI](#aws-cli)
-- [Pre-Deployment Checklist](#pre-deployment-checklist)
-  - [Verification Commands](#verification-commands)
-
-
-
-## Required Software
+## Required Tools
 
 ### Terraform
 - **Version**: >= 1.0

@@ -1,0 +1,29 @@
+# Documentation
+
+This repository provides a production-ready Terraform backend using S3 for state storage and DynamoDB for state locking. The documentation covers deployment, configuration, and ongoing management.
+
+The backend solution enables centralized state management for Terraform projects across your organization. It handles the bootstrapping problem by initially using local state to create the remote backend infrastructure, then optionally migrating to use its own backend.
+
+## Table of Contents
+
+- [Prerequisites](prerequisites.md)
+  - [Required Tools](prerequisites.md#required-tools)
+  - [Pre-Deployment Checklist](prerequisites.md#pre-deployment-checklist)
+- [Concepts & Background](concepts.md)
+  - [The Terraform State Problem](concepts.md#the-terraform-state-problem)
+  - [Remote State Solutions](concepts.md#remote-state-solutions)
+  - [What This Project Sets Up](concepts.md#what-this-project-sets-up)
+  - [The Bootstrapping Challenge](concepts.md#the-bootstrapping-challenge)
+  - [Implementation Features](concepts.md#implementation-features)
+  - [Cost Considerations](concepts.md#cost-considerations)
+- [Usage Guide](usage.md)
+  - [Main Scenarios](usage.md#main-scenarios)
+  - [Scenario 1: Single Account Setup](usage.md#scenario-1-single-account-setup)
+  - [Scenario 2: Centralized Management (Recommended)](usage.md#scenario-2-centralized-management-recommended)
+  - [State Key Organization](usage.md#state-key-organization)
+  - [Migrating from Remote to Local State](usage.md#migrating-from-remote-to-local-state)
+  - [Cleanup and Project Removal](usage.md#cleanup-and-project-removal)
+- [Cleanup Guide](cleanup.md)
+  - [Destroying Projects and Clearing State from the Backend](cleanup.md#destroying-projects-and-clearing-state-from-the-backend)
+  - [Verifying Complete Backend Cleanup](cleanup.md#verifying-complete-backend-cleanup)
+  - [Automated Cleanup Script](cleanup.md#automated-cleanup-script)

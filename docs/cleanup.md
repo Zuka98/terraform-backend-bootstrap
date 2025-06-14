@@ -1,6 +1,5 @@
 # Terraform State Backend Cleanup Guide
 
-This guide provides detailed instructions for properly cleaning up Terraform projects and their associated state files from the centralized backend infrastructure.
 
 ## Destroying Projects and Clearing State from the Backend
 

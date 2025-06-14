@@ -126,7 +126,7 @@ For comprehensive deployment guides, usage patterns, and best practices, explore
 
 | Guide | Description |
 |-------|-------------|
-| [Documentation Hub](docs/README.md) | Complete documentation index and navigation guide |
+| [Documentation Index](docs/README.md) | Complete documentation index and navigation guide |
 | [Prerequisites](docs/prerequisites.md) | Required software and permissions |
 | [Concepts & Background](docs/concepts.md) | Deep dive into state management, costs, and alternatives |
 | [Usage Guide](docs/usage.md) | Configure your projects to use the backend |
