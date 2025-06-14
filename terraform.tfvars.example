@@ -1,0 +1,14 @@
+# Example Terraform variables file
+# Copy this file to terraform.tfvars and customize the values
+
+# AWS region where resources will be created (optional - defaults to "us-east-1")
+aws_region = "us-east-1"
+
+# Name of the S3 bucket for storing Terraform state
+# Must be globally unique across all AWS accounts
+# REQUIRED: You must specify a unique bucket name
+# Recommended format: <organization>-terraform-backend
+bucket_name = "YOUR-UNIQUE-BUCKET-NAME-HERE"
+
+# Name of the DynamoDB table for state locking (optional - defaults to "terraform-locks")
+dynamodb_table_name = "terraform-locks"
