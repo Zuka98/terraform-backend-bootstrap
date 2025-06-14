@@ -1,0 +1,75 @@
+name: ✨ Feature Request
+description: Suggest a new feature or enhancement
+title: "[FEATURE] "
+labels: ["enhancement", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! Please provide as much detail as possible to help us understand your request.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 🤔 Problem Statement
+      description: Is your feature request related to a problem? Please describe the problem or limitation you're experiencing.
+      placeholder: A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: 💡 Proposed Solution
+      description: Describe the solution you'd like to see implemented. Include any alternatives you've considered.
+      placeholder: A clear and concise description of what you want to happen and any alternative approaches you've thought about.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: feature_category
+    attributes:
+      label: 📂 Feature Category
+      description: What category does this feature request fall into?
+      options:
+        - Backend Configuration (S3, DynamoDB)
+        - Security & Encryption
+        - State Management & Locking
+        - Multi-region Support
+        - Cross-account Setup
+        - Documentation & Examples
+        - CI/CD Integration
+        - Monitoring & Observability
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: use_case
+    attributes:
+      label: 🎯 Use Case & Examples
+      description: Describe your specific use case and provide examples of how this feature would be used
+      placeholder: |
+        **Use Case:** As a [type of user], I want [feature] so that [benefit].
+        
+        **Examples:**
+        ```hcl
+        # Example configuration showing how the feature would work
+        ```
+        
+        **Additional Context:** Any other information that might help us understand the request
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: ✅ Pre-submission Checklist
+      description: Please confirm the following
+      options:
+        - label: I have searched existing issues to ensure this is not a duplicate
+          required: true
+        - label: I have provided a clear problem statement and proposed solution
+          required: true

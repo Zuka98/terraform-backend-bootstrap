@@ -1,0 +1,49 @@
+name: 📝 Documentation Update
+description: Suggest improvements to documentation or report outdated information
+title: "[DOCS]: "
+labels: ["documentation"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve our documentation! Please provide details about what needs to be updated.
+
+  - type: textarea
+    id: documentation-location
+    attributes:
+      label: What documentation needs to be updated?
+      description: Which file, section, or topic needs improvement?
+      placeholder: e.g., README.md Quick Start section, docs/usage.md backend configuration
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: What's the issue?
+      description: What type of documentation problem is this?
+      options:
+        - Information is missing
+        - Information is outdated
+        - Information is unclear/confusing
+        - Information is incorrect/wrong
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-improvement
+    attributes:
+      label: Suggested improvement
+      description: What should be changed, added, or clarified?
+      placeholder: Describe the specific changes you'd like to see
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context, screenshots, or examples that would help
+      placeholder: Any additional information that might be helpful 
